@@ -1,0 +1,205 @@
+:root {
+  /* 🎨 Brand Colors */
+  --color-primary: #1E3A5F;
+  --color-secondary: #2C5282;
+  --color-accent: #63B3ED;
+
+  /* 🧱 Backgrounds */
+  --bg-main: #0F172A;
+  --bg-section: #111C2D;
+  --bg-card: #1A2333;
+
+  /* ✍️ Text */
+  --text-primary: #E2E8F0;
+  --text-secondary: #94A3B8;
+  --text-muted: #95a5a6;
+  --text-white: #ffffff;
+  --text-black: black;
+  --text-gray: gray;
+
+  /* 🔘 Buttons */
+  --btn-primary-bg: #2C5282;
+  --btn-primary-hover: #3B6AA0;
+  --btn-primary-text: #FFFFFF;
+
+  --btn-secondary-border: #2C5282;
+  --btn-secondary-text: #63B3ED;
+  --btn-secondary-hover-bg: #2C5282;
+  --btn-secondary-hover-text: #FFFFFF;
+
+  /* 🌫️ Shadows */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 15px rgba(99, 179, 237, 0.3);
+
+  /* 🧩 Borders */
+  --border-color: #2D3748;
+  --divider: rgba(255, 255, 255, 0.05);
+
+  /* ✨ Effects */
+  --transition: 0.3s ease;
+  --hover-lift: translateY(-4px);
+  --hover-scale: scale(1.03);
+}
+
+.section-programs {
+  margin-top: 110px;
+}
+
+.section-programs .programs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-programs .program {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 20px;
+  width: calc(30% - 20px);
+  align-items: center;
+  box-shadow: var(--shadow-soft);
+  background-color: var(--bg-card);
+  position: relative;
+  transition: .3s ease;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(40px);
+  animation: fadeUp .8s ease forwards;
+}
+
+.programs .program:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+.programs .program a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.program .program-name {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.program .program-name span {
+  display: block;
+  font-size: 40px;
+  position: relative;
+}
+
+.program .program-name span::after {
+  content: "";
+  height: 2px;
+  display: block;
+  width: 0;
+  background-color: var(--text-primary);
+  transition: .3s ease;
+}
+
+.program .program-desc {
+  text-align: justify;
+  text-indent: 40px;
+  color: var(--text-secondary);
+}
+
+.program .middle-section {
+  height: 60px;
+}
+
+.program .middle-section li {
+  color: var(--text-secondary);}
+
+.program .middle-section ul {
+  list-style: square;
+  gap: 10px;
+}
+
+.program .explore-btn {
+  border: 1px solid var(--border-color);
+  background-color: var(--btn-primary-bg);
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 20px;
+  transition:  var(--transition);
+}
+
+.program .explore-btn:hover {
+  opacity: .7;
+}
+
+.program .bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease;
+}
+
+.program .bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  border-radius: 10px;
+}
+
+.programs .program:hover .bg-image {
+  opacity: .2;
+}
+
+.programs .program:hover .explore-btn {
+  background-color: var(--btn-secondary-hover-bg);
+  box-shadow: var(--shadow-glow);
+  background-color: var(--bg-card);
+  border: 1px solid var(--text-white);
+  padding: 5px 30px;
+}
+
+.program:hover .program-name span::after {
+  width: 100%;
+}
+
+.program:nth-child(1) { animation-delay: 0.2s; }
+.program:nth-child(2) { animation-delay: 0.4s; }
+.program:nth-child(3) { animation-delay: 0.6s; }
+.program:nth-child(4) { animation-delay: 0.8s; }
+.program:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .programs .program {
+    width: calc(100% / 2 - 70px);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .programs {
+    flex-direction: column;
+  }
+
+  .programs .program {
+    width: calc(100% - 25px);
+  }
+}
+
+@media (max-width: 580px) {
+  .programs {
+    flex-direction: column;
+  }
+
+  .programs .program {
+    width: calc(100% - 25px);
+  }
+}
