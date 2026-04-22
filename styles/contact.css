@@ -1,0 +1,212 @@
+:root {
+  /* 🎨 Brand Colors */
+  --color-primary: #1E3A5F;
+  --color-secondary: #2C5282;
+  --color-accent: #63B3ED;
+
+  /* 🧱 Backgrounds */
+  --bg-main: #0F172A;
+  --bg-section: #111C2D;
+  --bg-card: #1A2333;
+
+  /* ✍️ Text */
+  --text-primary: #E2E8F0;
+  --text-secondary: #94A3B8;
+  --text-muted: #95a5a6;
+  --text-white: #ffffff;
+  --text-black: black;
+  --text-gray: gray;
+
+  /* 🔘 Buttons */
+  --btn-primary-bg: #2C5282;
+  --btn-primary-hover: #3B6AA0;
+  --btn-primary-text: #FFFFFF;
+
+  --btn-secondary-border: #2C5282;
+  --btn-secondary-text: #63B3ED;
+  --btn-secondary-hover-bg: #2C5282;
+  --btn-secondary-hover-text: #FFFFFF;
+
+  /* 🌫️ Shadows */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 15px rgba(99, 179, 237, 0.3);
+
+  /* 🧩 Borders */
+  --border-color: #2D3748;
+  --divider: rgba(255, 255, 255, 0.05);
+
+  /* ✨ Effects */
+  --transition: 0.3s ease;
+  --hover-lift: translateY(-4px);
+  --hover-scale: scale(1.03);
+}
+
+.university-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--bg-card);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+}
+
+.university-contact .name-desc .head-name {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.university-contact .name-desc .desc {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.university-contact .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.university-contact .name-wrapper {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.university-contact .list-contact .contact a {
+  display: flex;
+  gap: 10px;
+}
+
+.university-contact .list-contact .contact a:hover {
+  text-decoration: underline;
+}
+
+.university-contact .list-contact .contact a :where(p, i) {
+  color: var(--text-secondary);
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
+  margin-top: 10px;
+  position: relative;
+  box-shadow: var(--shadow-medium);
+}
+
+.map {
+  margin-top: 100px;
+}
+
+.send-container {
+  margin-top: 20px;
+  background-color: var(--bg-card);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 1px solid var(--border-color);
+  gap: 10px;
+}
+
+.send-container .left-container {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+  cursor: text;
+}
+
+.send-container .right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.send-container :where(.name, .email) {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: text;
+}
+
+.send-container .btn-submit {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+  background-color: var(--btn-primary-bg);
+  transition: .3s ease;
+}
+
+.send-container .btn-submit:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp .8s ease forwards;
+}
+
+.content:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.content:nth-child(2) {
+  animation-delay: .4s;
+}
+
+.content:nth-child(3) {
+  animation-delay: .8s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .university-contact {
+    flex-direction: column;
+  }
+
+  .university-contact .name-desc .head-name {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .university-contact .name-desc .desc {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .university-contact .contact-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .university-contact .contact-wrapper .name-wrapper {
+    text-align: center;
+  }
+
+  .send-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {}
