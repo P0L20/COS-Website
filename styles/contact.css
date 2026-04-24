@@ -105,6 +105,7 @@
 
 .map {
   margin-top: 100px;
+  width: 100%;
 }
 
 .send-container {
@@ -171,6 +172,7 @@
 .content:nth-child(3) {
   animation-delay: .8s;
 }
+
 
 @keyframes fadeUp {
   to {

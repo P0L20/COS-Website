@@ -46,18 +46,6 @@
   margin-top: 150px;
 }
 
-.section-developers .title-developer {
-  border: 1px solid var(--border-color);
-  padding: 10px;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 600;
-  border-radius: 10px;
-  background-color: var(--bg-card);
-  letter-spacing: 2px;
-  box-shadow: var(--shadow-soft);
-}
-
 .developers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
