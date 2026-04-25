@@ -112,6 +112,8 @@
 .content .right-section {
   width: 50%;
   overflow-y: scroll;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
   height: 400px;
 }
 
@@ -167,4 +169,33 @@
 
 .view-more-org a i {
   margin-bottom: -4px;
+}
+
+@media (max-width: 768px) {
+  .section-sub-org .org-desc  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .org-desc .left-section {
+    width: 100%;
+  }
+
+  .org-desc .right-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-wrapper .content {
+    flex-direction: column;
+  }
+
+  .content-wrapper .content .left-section {
+    width: 100%;
+  }
+
+  .content .right-section {
+    width: 100%;
+  }
 }

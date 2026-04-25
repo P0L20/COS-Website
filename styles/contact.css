@@ -88,6 +88,11 @@
   color: var(--text-secondary);
 }
 
+.logo-wrapper img {
+  box-shadow: var(--shadow-glow);
+  border-radius: 200px;
+}
+
 .map-container {
   width: 100%;
   height: 400px;

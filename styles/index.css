@@ -1,0 +1,214 @@
+:root {
+  /* 🎨 Brand Colors */
+  --color-primary: #1E3A5F;
+  --color-secondary: #2C5282;
+  --color-accent: #63B3ED;
+
+  /* 🧱 Backgrounds */
+  --bg-main: #0F172A;
+  --bg-section: #111C2D;
+  --bg-card: #1A2333;
+
+  /* ✍️ Text */
+  --text-primary: #E2E8F0;
+  --text-secondary: #94A3B8;
+  --text-muted: #95a5a6;
+  --text-white: #ffffff;
+  --text-black: black;
+  --text-gray: gray;
+
+  /* 🔘 Buttons */
+  --btn-primary-bg: #2C5282;
+  --btn-primary-hover: #3B6AA0;
+  --btn-primary-text: #FFFFFF;
+
+  --btn-secondary-border: #2C5282;
+  --btn-secondary-text: #63B3ED;
+  --btn-secondary-hover-bg: #2C5282;
+  --btn-secondary-hover-text: #FFFFFF;
+
+  /* 🌫️ Shadows */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 15px rgba(99, 179, 237, 0.3);
+
+  /* 🧩 Borders */
+  --border-color: #2D3748;
+  --divider: rgba(255, 255, 255, 0.05);
+
+  /* ✨ Effects */
+  --transition: 0.3s ease;
+  --hover-lift: translateY(-4px);
+  --hover-scale: scale(1.03);
+}
+
+.hero-section-wrapper {
+  display: flex;
+  width: 100%;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.hero-section-wrapper :where(.left-section, .right-section) {
+  width: 50%;
+  /* border: 1px solid var(--border-color); */
+  padding: 10px;
+}
+
+.hero-section-wrapper .left-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-section-wrapper .top-wrapper .cos-name {
+  text-transform: uppercase;
+  font-size: 70px;
+  text-shadow: var(--shadow-glow);
+  font-weight: 900;
+}
+
+.hero-section-wrapper .top-wrapper .urs-name {
+  font-size: 30px;
+  margin-top: -15px;
+}
+
+.hero-section-wrapper .mid-wrapper .desc {
+  color: rgba(255, 255, 255, 0.85);
+  width: 90%;
+}
+
+.hero-section-wrapper .bottom-wrapper .cta-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.bottom-wrapper .cta-wrapper .btn {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.bottom-wrapper .cta-wrapper .explore-programs {
+  background-color: var(--btn-primary-bg);
+}
+
+.bottom-wrapper .cta-wrapper .explore-programs:hover {
+  background-color: var(--btn-primary-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.bottom-wrapper .cta-wrapper .learn:hover {
+  opacity: .5;
+}
+
+.right-section .logo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.right-section .urs-logo {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+  opacity: .6;
+  border-radius: 100px;
+  z-index: 100;
+  animation: float 4s ease-in-out infinite;
+}
+
+.right-section .cos-logo {
+  width: 180px;
+  position: absolute;
+  right: -20px;
+  bottom: 10px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+  border-radius: 100px;
+  opacity: .3;
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.bg-hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.bg-hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: linear-gradient(
+  to bottom,
+  rgba(15, 23, 42, 0) 20%,
+  rgba(15, 23, 42, 0.3) 50%,
+  rgba(15, 23, 42, 0.7) 80%,
+  var(--bg-main) 100%
+);
+  z-index: 1;
+}
+
+/* .right-section .sub-logo {
+  width: 60px;
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+  opacity: .4;
+  animation: float 4s ease-in-out infinite;
+}
+
+.right-section .sub-logo:nth-child(2) {
+  bottom: 100px;
+  right: -10px;
+  width: 90px;
+}
+
+.right-section .sub-logo:nth-child(3) {
+  bottom: -35px;
+  right: 40px;
+}
+
+.right-section .sub-logo:nth-child(4) {
+  bottom: 60px;
+  right: -70px;
+  width: 90px;
+}
+
+.right-section .sub-logo:nth-child(5) {
+  bottom: -35px;
+  right: -20px;
+}
+
+.right-section .sub-logo:nth-child(5) {
+  bottom: -35px;
+  right: -20px;
+} */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
