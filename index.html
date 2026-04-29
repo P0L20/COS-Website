@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>URSM - COS</title>
+  
+  <link rel="icon" type="image/x-icon" href="image/cos-logo.png">
 
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
@@ -13,18 +15,12 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<body>
+<body id="top">
 
   <header class="header">
-    <div class="logo logo-left">
-      <img src="image/cos-logo.png" alt="">
-      <div class="text-container">
-        <p class="head">College of Sciece</p>
-        <p class="sub">University of Rizal System - Morong</p>
-      </div>
-    </div>
     <nav>
       <ul class="nav-bars">
+        <img class="logo" src="image/cos-logo.png" alt="">
         <li class="bar active">
           <a href="index.html">Home</a>
         </li>
@@ -41,55 +37,168 @@
           <a href="contact.html">Contact</a>
         </li>
         <li class="bar">
-          <a href="developer.html">Developer</a>
+          <a href="developer.html">Developers</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="section-content hero-section">
-      <div class="hero-section-wrapper">
-        <div class="left-section">
-          <div class="top-wrapper">
-            <p class="cos-name">College of Science</p>
-            <p class="urs-name">University of Rizal System - Morong Campus</p>
+    <div class="hero-section">
+      <div class="hero-wrapper">
+        <div class="text-wrapper">
+          <div class="top-text">
+            <div class="head-text">COLLEGE OF <span>SCIENCE</span></div>
+            <div class="sub-text">University of Rizal System - Morong Campus</div>
           </div>
-          <div class="mid-wrapper">
-            <p class="desc">A community of future scientists, innovators, and problem-solvers committed to excellence in
-              science,
-              research, and technology at the University of Rizal System – Morong Campus.</p>
-          </div>
-          <div class="bottom-wrapper">
-            <div class="cta-wrapper">
-              <div class="btn explore-programs">
-                <a href="programs.html">Explore Programs</a>
-              </div>
-              <div class="btn learn"><a href="about.html">Learn More</a></div>
+          <div class="cta-btns">
+            <div class="btn explore">
+              <a href="programs.html">Explore Programs</a>
+            </div>
+            <div class="btn learn">
+              <a href="#learn">Learn More</a>
             </div>
           </div>
         </div>
-        <div class="right-section">
-          <div class="logo-wrapper">
-            <div class="urs-wrapper">
-              <img src="image/urs-logo.png" alt="" class="urs-logo">
+
+        <div class="bg-wrapper">
+          <video class="bg-hero" autoplay muted loop src="image/video1.mp4"></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-content content about-college"  id="learn">
+      <div class="section-title">About the College of Science</div>
+      <div class="about information">
+        <p class="desc-cos">The College of Science at URS Morong offers quality education and fosters innovation in
+          various scientific fields. It is committed to developing skilled and future-ready graduates through strong
+          academic programs and practical learning. The college offers Bachelor of Science programs in Mathematics,
+          Computer Science, Biology, History, and Psychology.</p>
+      </div>
+      <div class="description-cos information">
+        <div class="information-title">What Sets the College of Science Apart</div>
+        <ul class="skills">
+          <li class="skill">
+            <div class="icon">
+              <i class="fi fi-rr-chalkboard-user"></i>
             </div>
-            <div class="cos-wrapper">
-              <img src="image/cos-logo.png" alt="" class="cos-logo">
+            <div class="text-wrapper">
+              <div class="skill-title">Competent Faculty</div>
+              <div class="skill-desc">Highly qualified and experienced professors dedicated to delivering quality
+                education and mentorship in various scientific fields.</div>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="icon">
+              <i class="fi fi-rr-bulb"></i>
+            </div>
+            <div class="text-wrapper">
+              <div class="skill-title">Innovative</div>
+              <div class="skill-desc">The college promotes cutting-edge research that addresses real-world problems and
+                contributes to scientific advancement.</div>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="icon">
+              <i class="fi fi-rr-graduation-cap"></i>
+            </div>
+            <div class="text-wrapper">
+              <div class="skill-title">Future-Ready Graduates</div>
+              <div class="skill-desc">Equipping students with critical thinking, technical skills, and adaptability
+                needed for modern scientific careers.</div>
+            </div>
+          </li>
+          <li class="skill">
+            <div class="icon">
+              <i class="fi fi-rr-users-alt"></i>
+            </div>
+            <div class="text-wrapper">
+              <div class="skill-title">Student Organizations</div>
+              <div class="skill-desc">Active communities fostering growth and collaboration</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="more-info information">
+        <div class="information-title">What Sets the College of Science Apart</div>
+        <div class="wrapper">
+          <div class="section programs">
+            <div class="wrapper-title">Programs Offered</div>
+            <ul class="programs">
+              <li class="prog">
+                <p>Bachelor of Science in Biology</p>
+              </li>
+              <li class="prog">
+                <p>Bachelor of Science in Psychology</p>
+              </li>
+              <li class="prog">
+                <p>Bachelor of Science in Mathematics</p>
+              </li>
+              <li class="prog">
+                <p>Bachelor of Science in Human Service</p>
+              </li>
+              <li class="prog">
+                <p>Bachelor of Science in Computer Science</p>
+              </li>
+            </ul>
+            <div class="explore-more">
+              <a href="programs.html">Explore</a>
+            </div>
+          </div>
+          <div class="section org">
+            <div class="wrapper-title">Students' Organizations</div>
+            <ul class="programs">
+              <li class="prog">
+                <p>Mathematics Circle</p>
+              </li>
+              <li class="prog">
+                <p>Buklurang Gabay Patnubay</p>
+              </li>
+              <li class="prog">
+                <p>Biology Student Association</p>
+              </li>
+              <li class="prog">
+                <p>Samahan ng mga Mag-aaral sa Sikolohiya</p>
+              </li>
+              <li class="prog">
+                <p>Technology Innovators Through Programming and Algorithm Sciences</p>
+              </li>
+            </ul>
+            <div class="explore-more">
+              <a href="organizations.html">Explore</a>
             </div>
           </div>
         </div>
+      </div> -->
+    </div>
+
+    <div class="section-content college-advocacy">
+  <div class="section-title">College of Science History
+  </div>
+  <div class="advo-wrapper">
+    <div class="section left-section">
+      <video width="600" controls >
+        <source src="image/history.mp4" type="video/mp4">
+      </video>
+      <div class="link">
+        <a target="_blank" href="https://www.facebook.com/reel/2040575310037376">View original post</a>
       </div>
-      <div class="bg-hero">
-        <img src="image/hero-image.jpg" alt="">
-      </div>
-    </section>
+    </div>
+    <div class="section right-section">
+      <p class="advo-title">HISTORY OF THE COLLEGE</p>
+      <p class="desc">
+         The College of Science at URS Morong has evolved into a center of academic excellence, offering programs in Mathematics, Computer Science, Biology, Hospitality Science, and Psychology. It continues to shape students into skilled and globally competitive professionals.
+      </p>
+    </div>
+  </div>
+</div>
   </main>
 
 
   <footer class="footer">
     <div class="back-to-top">
-
+      <a href="#top">
+      <i class="fi fi-rr-angle-up"></i></a>
     </div>
 
     <div class="top-part">
@@ -107,7 +216,7 @@
             <li><a href="programs.html">Programs</a></li>
             <li><a href="organizations.html">Organizations</a></li>
             <li><a href="about.html">Mission and Visions</a></li>
-            <li><a href="developer.html">Developer</a></li>
+            <li><a href="developer.html">Developers</a></li>
           </ul>
         </div>
 
