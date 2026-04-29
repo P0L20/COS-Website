@@ -444,7 +444,7 @@ main {
     text-align: center;
   }
 
-  nav .nav-bars a {
+  nav .nav-bars .bar a {
     font-size: 10px;
     display: block;
     padding: 0;
