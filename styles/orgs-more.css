@@ -164,3 +164,13 @@
     width: 100%;
   }
 }
+
+@media (max-width: 500px) {
+  .org-desc .desc {
+    font-size: 14px;
+  }
+
+  .content-wrapper .left-section .act-desc  {
+    font-size: 14px;
+  }
+}

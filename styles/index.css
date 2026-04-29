@@ -459,6 +459,18 @@
   }
 
   .college-advocacy .advo-wrapper .right-section .desc {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .about-college .skills .skill .skill-desc {
+    font-size: 14px;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .information .information-title {
+    font-size: 20px;
   }
 }

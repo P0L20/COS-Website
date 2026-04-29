@@ -183,4 +183,12 @@
   }
 }
 
-@media (max-width: 580px) {}
+@media (max-width: 500px) {
+  .university-contact .name-desc .desc {
+    font-size: 14px;
+  }
+
+  .contact-text {
+    font-size: 14px;
+  }
+}

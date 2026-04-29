@@ -102,6 +102,10 @@
   width: 150px;
 }
 
+.oppo p {
+  color: var(--text-secondary);
+}
+
 @media (max-width: 768px) {
   .content .content-wrapper {
     display: flex;
@@ -143,6 +147,10 @@
 
 @media (max-width: 500px) {
   .content .desc {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .info ul li {
+    font-size: 14px;
   }
 }
