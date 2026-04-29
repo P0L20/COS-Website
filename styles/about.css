@@ -175,4 +175,8 @@
   .section-title.about {
     font-size: 18px;
   }
+
+  .campus-information .content .card.goals .info-card {
+    width: 100%;
+  }
 }

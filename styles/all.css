@@ -407,12 +407,12 @@ main {
 
 @media (max-width: 500px) {
   .section-content {
-    width: 95%;
+    width: 94%;
   }
 
   nav {
-    padding: 0;
     left: 0;
+    padding: 0;
     right: 0;
     top: 0;
     position: fixed;
@@ -420,12 +420,13 @@ main {
     z-index: 1000;
   }
 
-  .logo {
+  .logo.nav {
     display: none;
   }
 
   nav .nav-bars {
     gap: 15px;
+    padding: 15px;
     border-radius: 0;
   }
 
