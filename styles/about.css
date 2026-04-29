@@ -178,5 +178,14 @@
 
   .campus-information .content .card.goals .info-card {
     width: 100%;
+    font-size: 14px;
+  }
+
+  .campus-information .img-wrapper .abt-text {
+    font-size: 14px;
+  }
+
+  .campus-information .content .info-card {
+    font-size: 14px;
   }
 }
