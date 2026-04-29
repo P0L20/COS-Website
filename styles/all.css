@@ -86,7 +86,7 @@ nav {
 }
 
 nav .nav-bars {
-  width:  100%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -233,10 +233,10 @@ nav .nav-bars li.active::after {
 }
 
 @media (max-width: 768px) {
-  .header{
+  .header {
     position: fixed;
     z-index: 1000;
-  } 
+  }
 
   nav {
     left: 5%;
@@ -270,7 +270,7 @@ nav .nav-bars li.active::after {
   gap: 10px;
 }
 
-.footer .top-section  .column {
+.footer .top-section .column {
   border-left: 1px solid var(--border-color);
   padding-left: 40px;
 }
@@ -301,7 +301,7 @@ nav .nav-bars li.active::after {
   color: var(--text-secondary);
 }
 
-.footer .top-section ul li:hover a :where(p,i) {
+.footer .top-section ul li:hover a :where(p, i) {
   color: var(--text-secondary);
 }
 
@@ -403,9 +403,66 @@ main {
     right: 5px;
     top: 110px;
   }
-
 }
 
+@media (max-width: 500px) {
+  .section-content {
+    width: 95%;
+  }
+
+  nav {
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    border-radius: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav .nav-bars {
+    gap: 15px;
+    border-radius: 0;
+  }
+
+  nav .nav-bars a {
+    font-size: 12px;
+    color: var(--text-primary);
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .footer .top-part .footer-message {
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .top-part .footer-message span {
+    font-size: 60px;
+    letter-spacing: 16px;
+    display: block;
+    text-align: center;
+  }
+
+  .footer .top-section .column-title {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
 
 .link a {
   background-color: var(--bg-card);

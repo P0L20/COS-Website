@@ -126,7 +126,7 @@
   width: 250px;
   height: 2px;
   background-color: var(--border-color);
-  box-shadow: var(--shadow-glow); 
+  box-shadow: var(--shadow-glow);
 }
 
 .information .information-title::before {
@@ -158,7 +158,7 @@
   margin-top: 50px;
   display: flex;
   gap: 20px;
-  
+
 }
 
 .about-college .skills .skill {
@@ -375,17 +375,18 @@
     justify-content: left;
   }
 
-   .more-info .wrapper .section .programs p {
+  .more-info .wrapper .section .programs p {
     width: 100%;
-   }
-   .more-info .wrapper .section .programs .prog {
-    width: 100%;
-   }
+  }
 
-   .more-info .wrapper .section .wrapper-title {
+  .more-info .wrapper .section .programs .prog {
+    width: 100%;
+  }
+
+  .more-info .wrapper .section .wrapper-title {
     text-align: left;
     font-size: 20px;
-   }
+  }
 
   .section-title {
     font-size: 20px;
@@ -416,5 +417,48 @@
   .college-advocacy .advo-wrapper .right-section .desc {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .text-wrapper .top-text .head-text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .text-wrapper .top-text .head-text span {
+    font-size: 80px;
+  }
+
+  .text-wrapper .top-text .sub-text {
+    font-size: 15px;
+  }
+
+  .about-college .about .desc-cos {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .information .information-title {
+    font-size: 18px;
+  }
+
+  .information .information-title::before,
+  .information .information-title::after {
+    display: none;
+  }
+
+  .hero-wrapper .cta-btns .btn a {
+    font-size: 12px;
+  } 
+
+  .college-advocacy .advo-wrapper .advo-title {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .college-advocacy .advo-wrapper .right-section .desc {
+    font-size: 14px;
   }
 }
