@@ -420,6 +420,7 @@ main {
     padding: 0;
     right: 0;
     top: 0;
+    height: 50px;
     position: fixed;
     border-radius: 0;
     z-index: 1000;
@@ -430,7 +431,7 @@ main {
   }
 
   nav .nav-bars {
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     padding: 5px;
     border-radius: 0;
