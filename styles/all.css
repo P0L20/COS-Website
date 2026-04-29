@@ -419,7 +419,7 @@ main {
     display: none;
   }
 
-nav {
+  nav {
     top: 0;
     left: 0;
     right: 0;
@@ -450,10 +450,6 @@ nav {
     padding: 0;
   }
 
-  /* remove hover underline (mobile UX cleaner) */
-  nav .nav-bars li::after {
-    display: none;
-  }
   html,
   body {
     width: 100%;
